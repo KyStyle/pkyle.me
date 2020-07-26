@@ -1,5 +1,25 @@
 body {
-  background-color: #0C0C0C;
+  background-color: #222831;
+  margin:0;
+  padding:0;
+}
+
+/* HEADER STUFF */
+
+.site-header {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  background-color: #393e46;
+  border-bottom: solid;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+}
+
+#sitename {
+  margin:10px;
+  padding:10px;
+  width: 11em;
 }
 
 #sitename-href {
@@ -8,31 +28,50 @@ body {
   padding-top: 0em;
   height: 2em;
   overflow: hidden;
-  color: white;
+  color: #eeeeee;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 200%;
   text-decoration: none;
+  transition: bottom ease 1s;
 }
 
 #sitename-text-p {
+  color: #32e0c4;
   position: relative;
   top: 0;
-  transition: top ease 0.5s;
-  text-transform: uppercase;
+  transition: top ease 0.2s;
+  user-select:none;
 }
 
 #sitename-text-kyle {
   position: relative;
   right: 0;
   transition: right ease 0.5s;
+  user-select:none;
+}
+
+#sitename-text-dot {
+  color: #32e0c4;
+  position: relative;
+  bottom: 0;
+  transition: bottom ease 0.3s;
+  user-select:none;
 }
 
 #sitename-text-me {
   position: relative;
   bottom: 0;
-  padding-bottom: 0.1em;
   transition: bottom ease 0.5s;
+  user-select:none;
+}
+
+#sitename-text-hillips {
+  color: #32e0c4;
+  position: relative;
+  top: 0.6em;
+  left: 0.75em;
+  user-select:none;
 }
 
 #sitename-text-hillips-pos {
@@ -42,10 +81,8 @@ body {
   transition: bottom ease 0.5s;
 }
 
-#sitename-text-hillips {
-  position: relative;
-  top: 0.6em;
-  left: 0.75em;
+#sitename:hover {
+  bottom: 0.5em;
 }
 
 #sitename-href:hover > #sitename-text-p {
@@ -57,6 +94,10 @@ body {
 }
 
 #sitename-href:hover > #sitename-text-me {
+  bottom: 1em;
+}
+
+#sitename-href:hover > #sitename-text-dot {
   bottom: 1em;
 }
 
