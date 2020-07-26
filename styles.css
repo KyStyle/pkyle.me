@@ -1,1 +1,65 @@
+body {
+  background-color: #0C0C0C;
+}
 
+#sitename-href {
+  position: relative;
+  display: inline-block;
+  padding-top: 0em;
+  height: 2em;
+  overflow: hidden;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+#sitename-text-p {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  text-transform: uppercase;
+}
+
+#sitename-text-kyle {
+  position: relative;
+  right: 0;
+  transition: right ease 0.5s;
+}
+
+#sitename-text-me {
+  position: relative;
+  bottom: 0;
+  padding-bottom: 0.1em;
+  transition: bottom ease 0.5s;
+}
+
+#sitename-text-hillips-pos {
+  position: relative;
+  bottom: 0;
+  padding-bottom: 0.1em;
+  transition: bottom ease 0.5s;
+}
+
+#sitename-text-hillips {
+  position: relative;
+  top: 0.6em;
+  left: 0.75em;
+}
+
+#sitename-href:hover > #sitename-text-p {
+  top: 1em;
+}
+
+#sitename-href:hover > #sitename-text-kyle {
+  right: 0.75em;
+}
+
+#sitename-href:hover > #sitename-text-me {
+  bottom: 1em;
+}
+
+#sitename-href:hover > #sitename-text-hillips-pos {
+  bottom: 0.85em;
+}
