@@ -7,40 +7,50 @@ body {
 /* HEADER STUFF */
 
 .site-header {
-  position: fixed;
-  height: 10vh;
+  position: relative;
+  height: 100px;
   width: 100%;
+  overflow: hidden;
   background-color: #393e46;
-  border-bottom: solid;
-  border-bottom-color: black;
-  border-bottom-width: 2px;
 }
+
+.site-header-centered {
+  float: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* SITENAME STUFF */
 
 #sitename {
-  margin:10px;
-  padding:10px;
-  width: 11em;
+  float: left;
+  position: absolute;
+  top: 20%;
+  left: 4%;
 }
 
-#sitename-href {
+.site-header-href {
   position: relative;
   display: inline-block;
   padding-top: 0em;
   height: 2em;
-  overflow: hidden;
   color: #eeeeee;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 200%;
+  text-transform: capitalize;
   text-decoration: none;
-  transition: bottom ease 1s;
+  overflow: hidden;
 }
 
+/* transition from sitename to author */
 #sitename-text-p {
   color: #32e0c4;
   position: relative;
   top: 0;
-  transition: top ease 0.2s;
+  transition: top ease 0.5s;
   user-select:none;
 }
 
@@ -103,4 +113,24 @@ body {
 
 #sitename-href:hover > #sitename-text-hillips-pos {
   bottom: 0.85em;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.letter {
+  display: inline-block;
+  line-height: 1em;
 }
