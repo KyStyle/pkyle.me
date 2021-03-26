@@ -1,0 +1,133 @@
+/* Colour Pallette: https://coolors.co/1c2022-f3f0e2-e8e1c5-916953-048ba8 */
+
+body {
+  background-color: #E8E1C5;
+  color: #1C2022;
+  margin: 0;
+}
+
+header, #img-div, #tribute-info {
+  margin: 25px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #F3F0E2;
+}
+
+footer {
+  margin: 25px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 25px;
+  background-color: #F3F0E2;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-areas:
+  "home title"
+  "home subtitle"
+}
+
+#home-link {
+  grid-area: home;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+}
+
+#home-icon {
+  width: 40px;
+  justify-self: center;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+}
+
+#subtitle {
+  grid-area: subtitle;
+  margin: 0;
+  padding: 0;
+}
+
+#title, #subtitle, #img-caption {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#img-div {
+  text-align: center;
+}
+
+#credit-text {
+  text-align: center;
+}
+
+h2, p, li, a {
+  font-family: sans-serif;
+}
+
+li {
+  list-style-type: square;
+}
+
+a:link {color: #048BA8; text-decoration: none;}
+a:hover {color: #4F5F92; text-decoration: underline;}
+a:visited {color: #4F5F92; text-decoration: none;}
+
+#image {
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+#img-caption {
+  margin: 1% auto;
+}
+
+a[target="_blank"]::after {
+  content: url("box-arrow-up-right.svg");
+  margin-left: 0.5ch;
+  display: inline;
+}
+
+.copyleft {
+  display:inline-block;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  #home-link { display: none; }
+
+  header, #tribute-info, #img-div {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "title"
+    "subtitle"
+  }
+
+  footer {
+    margin: 15px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+  }
+
+  #image {
+    width: 95%;
+  }
+}
