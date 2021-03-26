@@ -1,48 +1,55 @@
-body {
-  background-color: #222831;
-  margin:0;
-  padding:0;
+/* FONTS */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(fonts/montserrat/Montserrat-Black.otf) format("truetype");
 }
-
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/montserrat/Montserrat-Medium.otf) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/montserrat/Montserrat-Regular.otf) format("truetype");
+}
 /* HEADER STUFF */
 
 .site-header {
   position: relative;
-  height: 100px;
+  height: 5rem;
   width: 100%;
   overflow: hidden;
   background-color: #393e46;
 }
 
-.site-header-centered {
-  float: center;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%);
-}
-
 /* SITENAME STUFF */
 
-#sitename {
-  float: left;
-  position: absolute;
-  top: 20%;
-  left: 4%;
-}
-
-.site-header-href {
-  position: relative;
+#sitename-href {
   display: inline-block;
-  padding-top: 0em;
-  height: 2em;
+  float: left;
+  position: relative;
+  top: 1.1rem;
+  left: 1rem;
+  padding-top: 0;
+  height: 3.5rem;
   color: #eeeeee;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
   font-weight: 900;
   font-size: 200%;
   text-transform: capitalize;
   text-decoration: none;
   overflow: hidden;
+}
+#sitename {
+  transition: transform ease 0.5s;
 }
 
 /* transition from sitename to author */
@@ -53,14 +60,12 @@ body {
   transition: top ease 0.5s;
   user-select:none;
 }
-
 #sitename-text-kyle {
   position: relative;
   right: 0;
   transition: right ease 0.5s;
   user-select:none;
 }
-
 #sitename-text-dot {
   color: #32e0c4;
   position: relative;
@@ -68,69 +73,78 @@ body {
   transition: bottom ease 0.3s;
   user-select:none;
 }
-
 #sitename-text-me {
   position: relative;
   bottom: 0;
   transition: bottom ease 0.5s;
   user-select:none;
 }
-
 #sitename-text-hillips {
   color: #32e0c4;
   position: relative;
-  top: 0.6em;
-  left: 0.75em;
+  top: 1rem;
+  left: 1.5rem;
   user-select:none;
 }
-
 #sitename-text-hillips-pos {
   position: relative;
   bottom: 0;
-  padding-bottom: 0.1em;
+  padding-bottom: 0rem;
   transition: bottom ease 0.5s;
 }
+@media screen and (min-width: 600px) {
+  #sitename:hover {
+    bottom: 0.5rem;
+    transform: translateY(-0.5rem);
+  }
 
-#sitename:hover {
-  bottom: 0.5em;
+  #sitename:hover > #sitename-text-p {
+    top: 1.6rem;
+  }
+
+  #sitename:hover > #sitename-text-kyle {
+    right: 1.5rem;
+  }
+
+  #sitename:hover > #sitename-text-me {
+    bottom: 1.8rem;
+  }
+
+  #sitename:hover > #sitename-text-dot {
+    bottom: 1.8rem;
+  }
+
+  #sitename:hover > #sitename-text-hillips-pos {
+    bottom: 1.9rem;
+  }
 }
 
-#sitename-href:hover > #sitename-text-p {
-  top: 1em;
+/* BODY STUFF */
+body {
+  background-color: #222831;
+  margin: 0;
+  padding: 0;
 }
 
-#sitename-href:hover > #sitename-text-kyle {
-  right: 0.75em;
+main {
+  margin: 15px;
 }
 
-#sitename-href:hover > #sitename-text-me {
-  bottom: 1em;
+h1 {font-weight: 500; font-size: x-large}
+
+h1, li {
+  font-family: 'Montserrat', sans-serif;
+  color: #eeeeee;
 }
 
-#sitename-href:hover > #sitename-text-dot {
-  bottom: 1em;
+a:link {
+  color: #32e0c4;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
-
-#sitename-href:hover > #sitename-text-hillips-pos {
-  bottom: 0.85em;
+a:visited {
+  color: #8377D1;
 }
-
-.ml6 {
-  position: relative;
-  font-weight: 900;
-  font-size: 3.3em;
-}
-
-.text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-.letter {
-  display: inline-block;
-  line-height: 1em;
+a:hover {
+  text-decoration: underline;
 }
