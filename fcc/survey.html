@@ -24,20 +24,17 @@
 <body>
   <main>
     <h1 id="title">Water</h1>
-    <p id="description">an unfinished survey form about water</p>
-    <p id="edited">last edited on the 19th of March, 2021</p>
+    <p id="description">a survey form about water</p>
+    <br>
     <div id="card">
-    	<div id="blur">
-    		<div id="color"></div>
-    	</div>
       <form id="survey-form">
         <label for="name" id="name-label" >your name</label><br>
         <input type="text" id="name" class="button" name="name" placeholder="Bobby Boucher" required><br>
         <label for="email" id="email-label">email address</label><br>
         <input type="email" id="email" class="button" name="email" placeholder="bobby@example.org" required><br>
-        <label for="number" id="number-label">how many litres of water did you drink today?</label><br>
-        <input type="number" id="number" class="button" name="number" min="0" max="50" placeholder="2.6" required><br>
-        <p>what temperature do you prefer your water?</p>
+        <label for="number" id="number-label">how many glasses of water did you drink today?</label><br>
+        <input type="number" id="number" class="button" name="number" min="0" max="999" placeholder="8" required><br>
+        <label for="dropdown" id="dropdown-label">what temperature do you prefer your water?</label><br>
         <select name="dropdown" id="dropdown" class="button">
           <option value ="freezing">frozen</option>
           <option value ="cold">cold</option>
@@ -46,7 +43,19 @@
           <option value="scolding">scolding</option>
           <option value="scolding">evaporated</option>
         </select>
-        <p>(I'm having trouble figuring out how to use transparency in that dropdown selection menu. please bare with me while I try to figure this out haha)</p>
+        <br>
+        <label for="radio" id="radio-label">Would you recommend water to a friend?</label><br>
+          <label><input type="radio" name="radio" value="definitely">Definitely</label><br>
+          <label><input type="radio" name="radio" value="maybe">Maybe</label><br>
+          <label><input type="radio" name="radio" value="not really">Not Really</label><br>
+        <label for="checkboxes" id="checkboxes-label">Which types of water do you enjoy?</label><br>
+        <label><input type="checkbox" name="checkboxes" id="check1" value="spring water">Spring Water</label><br>
+        <label><input type="checkbox" name="checkboxes" id="check2" value="spring water">Purified Water</label><br>
+        <label><input type="checkbox" name="checkboxes" id="check3" value="spring water">Sparkling Water</label><br>
+        <label><input type="checkbox" name="checkboxes" id="check4" value="spring water">Mineral Water</label><br>
+        <label for="textarea" id="textarea-label">Is there anything else you would like to say about water?</label><br>
+        <textarea name="textarea" id="textarea-input" class="button" cols="20" rows=5></textarea><br>
+        <button type="submit" id="submit" class="button">Submit</button>
       </form>
     </div>
   </main>
