@@ -21,27 +21,6 @@
   src: url(fonts/montserrat/Montserrat-Regular.otf) format("truetype");
 }
 
-@media (prefers-color-scheme: light) {
-  .site-header {
-    background-color: #E6E6E6;
-  }
-  #sitename-href {
-    color: 393E46;
-  }
-  #sitename-text-p, #sitename-text-dot, #sitename-text-hillips {
-    color: 247FDB;
-  }
-  body {
-    background-color: fff;
-  }
-  h1, li {
-    color: #393E46;
-  }
-  a:link {
-    color: #247FDB;
-  }
-}
-
 /* HEADER STUFF */
 
 .site-header {
@@ -169,4 +148,26 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+}
+
+/* light theme support */
+@media (prefers-color-scheme: light) {
+  .site-header {
+    background-color: #E6E6E6;
+  }
+  #sitename-href {
+    color: 393E46;
+  }
+  #sitename-text-p, #sitename-text-dot, #sitename-text-hillips {
+    color: 247FDB;
+  }
+  body {
+    background-color: fff;
+  }
+  h1, li {
+    color: #393E46;
+  }
+  a:link {
+    color: #247FDB;
+  }
 }
