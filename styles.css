@@ -20,6 +20,28 @@
   font-display: swap;
   src: url(fonts/montserrat/Montserrat-Regular.otf) format("truetype");
 }
+
+@media (prefers-color-scheme: light) {
+  .site-header {
+    background-color: #E6E6E6;
+  }
+  #sitename-href {
+    color: 393E46;
+  }
+  #sitename-text-p, #sitename-text-dot, #sitename-text-hillips {
+    color: 247FDB;
+  }
+  body {
+    background-color: fff;
+  }
+  h1, li {
+    color: #393E46;
+  }
+  a:link {
+    color: #247FDB;
+  }
+}
+
 /* HEADER STUFF */
 
 .site-header {
@@ -27,7 +49,7 @@
   height: 5rem;
   width: 100%;
   overflow: hidden;
-  background-color: #E6E6E6;
+  background-color: #393E46;
 }
 
 /* SITENAME STUFF */
@@ -40,7 +62,7 @@
   left: 1rem;
   padding-top: 0;
   height: 3.5rem;
-  color: #393e46;
+  color: #eee;
   font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
   font-weight: 900;
   font-size: 200%;
@@ -54,7 +76,7 @@
 
 /* transition from sitename to author */
 #sitename-text-p {
-  color: #247FDB;
+  color: #32E0C4;
   position: relative;
   top: 0;
   transition: top ease 0.5s;
@@ -67,7 +89,7 @@
   user-select:none;
 }
 #sitename-text-dot {
-  color: #247FDB;
+  color: #32E0C4;
   position: relative;
   bottom: 0;
   transition: bottom ease 0.3s;
@@ -80,7 +102,7 @@
   user-select:none;
 }
 #sitename-text-hillips {
-  color: #247FDB;
+  color: #32E0C4;
   position: relative;
   top: 1rem;
   left: 1.5rem;
@@ -121,7 +143,7 @@
 
 /* BODY STUFF */
 body {
-  background-color: #fff;
+  background-color: #222831;
   margin: 0;
   padding: 0;
 }
@@ -134,11 +156,11 @@ h1 {font-weight: 500; font-size: x-large}
 
 h1, li {
   font-family: 'Montserrat', sans-serif;
-  color: #393e46;
+  color: #eee;
 }
 
 a:link {
-  color: #247FDB;
+  color: #32E0C4;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
