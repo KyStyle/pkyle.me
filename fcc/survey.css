@@ -16,6 +16,13 @@ https://www.color-hex.com/color-palette/2738
   src: url(/fonts/sniglet/Sniglet-Regular.otf) format("truetype");
 }
 
+#card-wrapper {
+  width: 35%;
+  margin: 3em auto;
+  background: rgba(0, 0, 0, 0.18);
+  background-size: cover;
+}
+
 #survey-form {
   position: relative;
   text-align: center;
