@@ -20,8 +20,10 @@ https://www.color-hex.com/color-palette/2738
   position: relative;
   min-width: 400px;
   max-width: 600px;
-  width: 75%;
-  height: 300px;
+  width: 75vw;
+  min-height: 300px;
+  max-height: 1000px;
+  height: 50vh;
   margin: 0 auto;
   padding: 25px 25px;
   border-radius: 14px;
