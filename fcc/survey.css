@@ -18,7 +18,7 @@ https://www.color-hex.com/color-palette/2738
 
 #card-wrapper {
   position: relative;
-  min-width: 400px;
+  min-width: 200px;
   max-width: 600px;
   width: 75vw;
   min-height: 300px;
@@ -34,6 +34,7 @@ https://www.color-hex.com/color-palette/2738
   z-index:10000;
 
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #survey-form {
@@ -93,6 +94,8 @@ select {
   font-size: 14pt;
   text-align: center;
   display: inline-block;
+  width: auto;
+  max-width: 90%;
   border: none;
 	outline: none;
 	color: #FFF;
@@ -152,11 +155,13 @@ body {
 /* Bubbles */
 
 #bubbles {
-  height: 100%;
-  padding: 0;
   width: 100%;
+  bottom: 25px;
   position: absolute;
   background: transparent;
+  align-items: center;
+  justify-content:space-around ;
+  position: absolute;
 }
 
 .bubble {
