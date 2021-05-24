@@ -29,8 +29,8 @@ https://www.color-hex.com/color-palette/2738
   border-radius: 14px;
   background: rgba(16, 18, 27, 0.07);
   background-size: cover;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
   z-index:10000;
 
   overflow-y: scroll;
@@ -156,7 +156,8 @@ body {
 
 #bubbles {
   width: 100%;
-  bottom: 25px;
+  height: 100%;
+  top: 0;
   position: absolute;
   background: transparent;
   align-items: center;
@@ -172,11 +173,13 @@ body {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   opacity: 0.2;
+  position: absolute;
 }
 
 .b1 {
-  left: 120px;
-  -webkit-transform: scale(0.44);
+  left: 16vw;
+
+    -webkit-transform: scale(0.44);
     -moz-transform: scale(0.44);
     transform: scale(0.44);
 
@@ -186,7 +189,7 @@ body {
 }
 
 .b2 {
-    left: 160px;
+    left: 65vw;
     -webkit-transform: scale(0.36);
     -moz-transform: scale(0.36);
     transform: scale(0.36);
@@ -196,7 +199,7 @@ body {
     -o-animation: moveclouds 4s linear infinite, sideWays 5s ease-in-out infinite alternate;
 }
 .b3 {
-    left: 195px;
+    left: 78vw;
     -webkit-transform: scale(0.34);
     -moz-transform: scale(0.34);
     transform: scale(0.34);
@@ -206,7 +209,7 @@ body {
     -o-animation: moveclouds 5s linear infinite, sideWays 9s ease-in-out infinite alternate;
 }
 .b4 {
-    left: 240px;
+    left: 22vw;
     -webkit-transform: scale(0.32);
     -moz-transform: scale(0.32);
     transform: scale(0.32);
@@ -216,7 +219,7 @@ body {
     -o-animation: moveclouds 6s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 .b5 {
-    left: 220px;
+    left: 67vw;
     -webkit-transform: scale(0.4);
     -moz-transform: scale(0.4);
     transform: scale(0.4);
@@ -226,7 +229,7 @@ body {
     -o-animation: moveclouds 7s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 .b6 {
-    left: 160px;
+    left: 56vw;
     -webkit-transform: scale(0.35);
     -moz-transform: scale(0.35);
     transform: scale(0.35);
@@ -236,53 +239,53 @@ body {
     -o-animation: moveclouds 8s linear infinite, sideWays 5s ease-in-out infinite alternate;
 }
 .b7 {
-    left: 215px;
+    left: 58vw;
     -webkit-transform: scale(0.27);
     -moz-transform: scale(0.27);
     transform: scale(0.27);
 
-    -webkit-animation: moveclouds 3s linear infinite, sideWays 2s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 3s linear infinite, sideWays 2s ease-in-out infinite alternate;
-    -o-animation: moveclouds 3s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -webkit-animation: moveclouds 9s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 9s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -o-animation: moveclouds 9s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 .b8 {
-    left: 165px;
+    left: 29vw;
     -webkit-transform: scale(0.25);
     -moz-transform: scale(0.25);
     transform: scale(0.25);
 
-    -webkit-animation: moveclouds 4s linear infinite, sideWays 3s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 4s linear infinite, sideWays 3s ease-in-out infinite alternate;
-    -o-animation: moveclouds 4s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -webkit-animation: moveclouds 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -o-animation: moveclouds 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
 }
 .b9 {
-    left: 130px;
+    left: 27vw;
     -webkit-transform: scale(0.32);
     -moz-transform: scale(0.32);
     transform: scale(0.32);
 
-    -webkit-animation: moveclouds 5s linear infinite, sideWays 4s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 5s linear infinite, sideWays 4s ease-in-out infinite alternate;
-    -o-animation: moveclouds 5s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -webkit-animation: moveclouds 11s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 11s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -o-animation: moveclouds 11s linear infinite, sideWays 4s ease-in-out infinite alternate;
 }
 
 .b10 {
-    left: 193px;
+    left: 57vw;
     -webkit-transform: scale(0.26);
     -moz-transform: scale(0.26);
     transform: scale(0.26);
 
-    -webkit-animation: moveclouds 6s linear infinite, sideWays 2s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 6s linear infinite, sideWays 2s ease-in-out infinite alternate;
-    -o-animation: moveclouds 6s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -webkit-animation: moveclouds 12s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 12s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -o-animation: moveclouds 12s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes moveclouds {
     0% {
-        top: 0px;
+        top: 100vh;
     }
     100% {
-        top: 100px;
+        top: -10vh;
     }
 }
 
@@ -297,11 +300,11 @@ body {
 
 @-moz-keyframes moveclouds {
     0% {
-        top: 500px;
+        top: -10vh;
     }
 
     100% {
-        top: -500px;
+        top: 100vh;
     }
 }
 
@@ -315,10 +318,10 @@ body {
 }
 @-o-keyframes moveclouds {
     0% {
-        top: 500px;
+        top: -10vh;
     }
     100% {
-        top: -500px;
+        top: 100vh;
     }
 }
 
