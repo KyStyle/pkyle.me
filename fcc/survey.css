@@ -17,10 +17,16 @@ https://www.color-hex.com/color-palette/2738
 }
 
 #card-wrapper {
-  width: 35%;
-  margin: 3em auto;
-  background: rgba(0, 0, 0, 0.18);
+  min-width: 400px;
+  width: 75%;
+  max-width: ;
+  margin: 0 auto;
+  padding: 25px 25px;
+  border-radius: 14px;
+  background: rgba(16, 18, 27, 0.05);
   background-size: cover;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 #survey-form {
@@ -99,4 +105,20 @@ body {
 
 	margin: auto;
 	padding: auto;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbb;
+  font-weight: lighter;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #bbb;
+  font-weight: lighter;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #bbb;
+  font-weight: lighter;
 }
