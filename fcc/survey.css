@@ -189,7 +189,7 @@ body {
 }
 
 .b2 {
-    left: 65vw;
+    left: 55vw;
     -webkit-transform: scale(0.36);
     -moz-transform: scale(0.36);
     transform: scale(0.36);
@@ -229,7 +229,7 @@ body {
     -o-animation: moveclouds 7s linear infinite, sideWays 2s ease-in-out infinite alternate;
 }
 .b6 {
-    left: 56vw;
+    left: 46vw;
     -webkit-transform: scale(0.35);
     -moz-transform: scale(0.35);
     transform: scale(0.35);
