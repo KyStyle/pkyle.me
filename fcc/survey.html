@@ -27,7 +27,7 @@
     <p id="description">a survey form about water</p>
     <br>
     <div id="card-wrapper">
-      <form id="survey-form" action=”mailto:kyle@pkyle.me” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+      <form id="survey-form" action=”mailto:kyle@pkyle.me” method=”GET” enctype=”text/plain” onsubmit="location.href='thanks.html';">
         <label for="name" id="name-label" >your name</label><br>
         <input type="text" id="name" class="button" name="name" placeholder="Bobby Boucher" required><br>
         <label for="email" id="email-label">email address</label><br>
