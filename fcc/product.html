@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Product Landing Page | PKYLE</title>
+    <title>Watermotion | PKYLE</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kyle Phillip's Personal Homepage">
     <meta name="keywords" content="Kyle Phillips, Personal, Homepage, KyStyle">
     <meta name="author" content="Kyle Phillips">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Product Landing Page">
+    <meta property="og:title" content="Watermotion">
     <meta property="og:description" content="Product Landing Page">
     <meta property="og:url" content="https://pkyle.me/fcc/product.html">
     <meta property="og:image" content="/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#222831">
-    <!-- <link rel="stylesheet" href="product.css"> -->
+    <link rel="stylesheet" href="product.css">
 </head>
 <body>
-    <p>This webpage is under construction.</p>
+    <header id="header">
+        <div class="logo">
+            <img src="watermation-logo.svg" alt="">
+            <text class="logo-text">
+                <svg class="logo-svg" viewBox="0 0 160 20" preserveAspectRatio="xMidYMin">
+                    <defs>
+                        <linearGradient id="gradient">
+                            <stop color="#000"/>
+                        </linearGradient>
+                        <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0" to="40,0" repeatCount="indefinite"/>
+                            </path>
+                        </pattern>
+                    </defs>
+                    <text text-anchor="middle" x="35" y="18" fill="white" fill-opacity="0.1">Water</text>
+                    <text text-anchor="middle" x="35" y="18" fill="url(#wave)"  fill-opacity="1">Water</text>
+                    <text text-anchor="middle" x="113" y="18" fill="black" fill-opacity="1">motion</text>
+                </svg>
+            </text>
+            
+        </div>
+    </header>
+    <main>
+        
+    </main>
 </body>
 </html>
