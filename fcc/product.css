@@ -28,7 +28,7 @@ header {
   }
 
 .logo {
-    width: 280px;
+    width: 12ch;
     display: inline-flex;
     align-items: left;
 }
