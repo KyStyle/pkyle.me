@@ -28,9 +28,10 @@ header {
   }
 
 .logo {
-    width: 12ch;
+    width: auto;
     display: inline-flex;
-    align-items: left;
+    align-items: center;
+    justify-content: left;
 }
 
 .logo > img {
