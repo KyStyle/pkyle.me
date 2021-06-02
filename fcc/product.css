@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    background-color: #FFF;
+    background-color: #FFFBFA;
 }
 
 a {
@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: #ccc;
+    background-color: #08415C;
   }
 
 .logo {
