@@ -127,7 +127,7 @@ nav {
 
 nav > ul {
     padding: 0;
-    width: 35vw;
+    width: 32ch;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
