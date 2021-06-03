@@ -23,7 +23,7 @@ header {
     background-color: #08415C;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     header {
         padding: 0;
         justify-content: center;
@@ -67,7 +67,7 @@ header {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .logo-svg {
         max-width: none;
         width: auto;
@@ -110,7 +110,7 @@ nav {
     padding: 0 50px 0 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     nav {
         margin-top: 0;
         width: 100%;
@@ -133,9 +133,49 @@ nav > ul {
     justify-content: space-around;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     nav > ul {
         margin-top: 0;
         flex-direction: column;
     }
+}
+
+main {
+    margin: 100px auto 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 200px auto 0 auto;
+    }
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+#about-section {
+    margin-top: 50px;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    #about-section {
+        flex-direction: column;
+    }
+}
+
+.about-container {
+    margin: 6px;
+    flex-basis: 30%;
+}
+
+.about-container > img {
+    display: block;
+    width: 8rem;
+    margin: auto;
 }
