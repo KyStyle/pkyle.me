@@ -4,7 +4,7 @@
     font-weight: 500;
     font-display: swap;
     src: url(/fonts/montserrat/Montserrat-Medium.otf) format("truetype");
-  }
+}
 
 body {
     margin: 0;
@@ -154,16 +154,29 @@ main {
 
 h1,
 h2,
+h3,
+li,
+button,
+input,
+label,
 p {
     text-align: center;
+    font-family: "Montserrat";
 }
 
+#about {
+    width: 70%;
+    margin: 0 auto;
+} 
 #about-section {
     margin-top: 50px;
     display: flex;
 }
 
 @media (max-width: 600px) {
+    #about {
+        width: 100%;
+    } 
     #about-section {
         flex-direction: column;
     }
@@ -178,4 +191,164 @@ p {
     display: block;
     width: 8rem;
     margin: auto;
+}
+
+#demo-section {
+    display: flex;
+}
+iframe {
+    margin: 0 auto;
+}
+
+#pricing {
+    margin-top: 60px;
+}
+
+#pricing-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+}
+  
+.plan > .level {
+    text-align: center;
+    font-family: "Montserrat";
+    color: #c7eafa;
+
+    margin: 15px 0;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #08415C;
+    border: 0;
+    border-radius: 15px;
+}
+  
+.plan > h2 {
+    margin: 0;
+}
+
+.plan > h3 {
+    margin: 5px 0 0 0;
+    font-style: italic;
+    color: #1FB2C2;
+}
+  
+.plan > ol {
+    margin: 10px 0;
+    padding: 0;
+}
+  
+.plan > ol > li {
+    padding: 5px 0;
+}
+  
+.plan > button:hover {
+    background-color: #1FB2C2;
+    transition: background-color 1s;
+}
+  
+@media (max-width: 800px) {
+    #pricing-section {
+        flex-direction: column;
+    }
+    .plan {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+.btn {
+    padding: 0 20px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#subscribe-form > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+ 
+#subscribe-form input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    margin: 0 0 15px 0;
+}
+  
+#subscribe-form input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
+    color: #c7eafa;
+
+    margin: 15px 0;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #08415C;
+    border: 0;
+    border-radius: 15px;
+}
+  
+#subscribe-form input[type='submit']:hover {
+    background-color: #1FB2C2;
+    transition: background-color 1s;
+}
+
+label {
+    color: #999;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+  
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+footer > ul > li {
+    padding: 0 10px;
+}
+  
+footer > p {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+footer > p > a {
+    margin: 0 0.5ch;
 }

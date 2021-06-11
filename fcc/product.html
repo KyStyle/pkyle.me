@@ -20,7 +20,7 @@
 <body>
     <header id="header">
         <a class="logo" href="">
-            <img src="watermation-logo.svg" alt="">
+            <img id="header-img" src="watermation-logo.svg" alt="">
             <svg class="logo-svg" width="220" height="50" preserveAspectRatio="xMidYMid meet" viewbox="0 0 120 30">
                 <defs>
                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -71,6 +71,64 @@
                 <p>Automatically deploy randomised services. Our AI will eventually learn to deploy the right configuration for your needs.</p>
             </div>
         </section>
+        <h1 id="demo">See it in action</h1>
+        <section id="demo-section">
+            <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/IJ-PVdapaDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <h1 id="pricing">Choose a plan that works for you</h1>
+        <section id="pricing-section">
+            <div class="plan" id="personal">
+                <button class="level btn">Personal</button>
+                <h2>A$4.99 per month</h2>
+                <ol>
+                    <li>Up to 200 devices</li>
+                    <li>24/7 Monitoring</li>
+                    <li>500TB Cloud Storage</li>
+                  </ol>
+            </div>
+            <div class="plan" id="enterprise">
+                <button class="level btn">Enterprise</button>
+                <h2>A$49.99 per month</h2>
+                <ol>
+                    <li>Up to 2000 devices</li>
+                    <li>24/7 Monitoring</li>
+                    <li>6500TB Cloud Storage</li>
+                    <li>Automatic Backups</li>
+                  </ol>
+            </div>
+            <div class="plan" id="government">
+                <button class="level btn">Government</button>
+                <h2>A$9999.99 per month</h2>
+                <h3>Best Value!</h3>
+                <ol>
+                    <li>Unlimited devices</li>
+                    <li>24/7 Monitoring</li>
+                    <li>500PB Cloud Storage</li>
+                    <li>Privacy invasive trackers</li>
+                  </ol>
+            </div>
+        </section>
+        <h1 id="subscribe">Subscribe to hear more</h1>
+        <section id="subscribe-form">
+            <form action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required/><br>
+                <input type="checkbox" name="accept" id="accept" checked> 
+                <label for="accept">I agree to waive my moral rights by accepting the Terms and Conditions, and the Privacy Policy.</label><br>
+                <input type="checkbox" name="promotions" id="promotions" checked> 
+                <label for="accept">I agree to recieve 15 randomly generated promotional emails a day</label><br>
+                <input id="submit" type="submit" value="Get Started" class="btn"/>
+            </form>
+        </section>
     </main>
+    <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p>Watermotion is not a real product or service and is not to be taken seriously.</p>
+        <p>This <a href="https://freecodecamp.org">FreeCodeCamp</a> Landing Page was developed by <a href="https://pkyle.me">Kyle Phillips</a></p>
+        <p>This material is unofficial and is not endorsed by Discord. All Rights Reserved.</p>
+      </footer>
 </body>
 </html>
