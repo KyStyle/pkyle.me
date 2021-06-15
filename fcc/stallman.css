@@ -11,7 +11,7 @@
 /* https://coolors.co/e9ebed-151414-0e0d06-1a130f-ee4266 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #0E0D06;
+    --background-color: #0A0A0A;
     --card-color: #151414;
     --text-color: #E9EBED;
     --link-color: #10CEF9;
