@@ -1,8 +1,27 @@
-/* Colour Pallette: https://coolors.co/1c2022-f3f0e2-e8e1c5-916953-048ba8 */
+/* https://coolors.co/1c2022-f3f0e2-e8e1c5-4f5f92-048ba8 */
+:root {
+  --background-color: #E8E1C5;
+  --card-color: #F3F0E2;
+  --text-color: #1C2022;
+  --link-color: #048BA8;
+  --link-visited-color: #4F5F92;
+}
+
+/* dark theme support */
+/* https://coolors.co/e9ebed-151414-0e0d06-1a130f-ee4266 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0E0D06;
+    --card-color: #151414;
+    --text-color: #E9EBED;
+    --link-color: #10CEF9;
+    --link-visited-color: #6d7db0;
+  }
+}
 
 body {
-  background-color: #E8E1C5;
-  color: #1C2022;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
 }
 
@@ -10,14 +29,14 @@ header, #img-div, #tribute-info {
   margin: 25px;
   padding: 25px;
   border-radius: 25px;
-  background-color: #F3F0E2;
+  background-color: var(--card-color);
 }
 
 footer {
   margin: 25px;
   padding: 10px 25px 10px 25px;
   border-radius: 25px;
-  background-color: #F3F0E2;
+  background-color: var(--card-color);
 }
 
 header {
@@ -76,9 +95,9 @@ li {
   list-style-type: square;
 }
 
-a:link {color: #048BA8; text-decoration: none;}
-a:hover {color: #4F5F92; text-decoration: underline;}
-a:visited {color: #4F5F92; text-decoration: none;}
+a:link {color: var(--link-color); text-decoration: none;}
+a:hover {color: var(--link-visited-color); text-decoration: underline;}
+a:visited {color: var(--link-visited-color); text-decoration: none;}
 
 #image {
   display: block;
