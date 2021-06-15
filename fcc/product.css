@@ -6,9 +6,34 @@
     src: url(/fonts/montserrat/Montserrat-Medium.otf) format("truetype");
 }
 
+:root {
+    --background-color: #FFFBFA;
+    --header-color: #08415C;
+    --footer-color: #dddddd;
+    --text-color: #000000;
+    --label-color: #999999;
+    --nav-link-color: #FFFBFA;
+    --button-text-color: #c7eafa;
+    --highlight-color: #1FB2C2;
+    --footer-text-color: #444;
+  }
+  
+  /* dark theme support */
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #040404;
+        --footer-color: #141414;
+        --text-color: #ffffff;
+        --label-color: #404040;
+        --button-text-color: #c7eafa;
+        --highlight-color: #1FB2C2;
+        --footer-text-color: #888;
+    }
+  }
+
 body {
     margin: 0;
-    background-color: #FFFBFA;
+    background-color: var(--background-color);
 }
 
 header {
@@ -20,7 +45,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #08415C;
+    background-color: var(--header-color);
 }
 
 @media (max-width: 600px) {
@@ -80,17 +105,6 @@ svg > text {
     font-size: 12pt;
 }
 
-.logo-text {
-    font-family: "Montserrat";
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #000;
-}
-
 a {
     text-decoration: none;
 }
@@ -102,7 +116,7 @@ li {
 .nav-link {
     font-family: "Montserrat";
     font-weight: 300;
-    color: #FFFBFA;
+    color: var(--nav-link-color);
     text-decoration: none;
 }
 
@@ -144,6 +158,7 @@ main {
     margin: 100px auto 0 auto;
     width: 80%;
     max-width: 1200px;
+    color: var(--text-color)
 }
 
 @media (max-width: 600px) {
@@ -223,14 +238,14 @@ iframe {
 .plan > .level {
     text-align: center;
     font-family: "Montserrat";
-    color: #c7eafa;
+    color: var(--button-text-color);
 
     margin: 15px 0;
     padding: 15px 0;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: #08415C;
+    background-color: var(--header-color);
     border: 0;
     border-radius: 15px;
 }
@@ -242,7 +257,7 @@ iframe {
 .plan > h3 {
     margin: 5px 0 0 0;
     font-style: italic;
-    color: #1FB2C2;
+    color: var(--highlight-color);
 }
   
 .plan > ol {
@@ -255,7 +270,7 @@ iframe {
 }
   
 .plan > button:hover {
-    background-color: #1FB2C2;
+    background-color: var(--highlight-color);
     transition: background-color 1s;
 }
   
@@ -306,30 +321,30 @@ iframe {
     width: 100%;
     text-align: center;
     font-family: "Montserrat";
-    color: #c7eafa;
+    color: var(--button-text-color);
 
     margin: 15px 0;
     padding: 15px 0;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: #08415C;
+    background-color: var(--header-color);
     border: 0;
     border-radius: 15px;
 }
   
 #subscribe-form input[type='submit']:hover {
-    background-color: #1FB2C2;
+    background-color: var(--highlight-color);
     transition: background-color 1s;
 }
 
 label {
-    color: #999;
+    color: var(--label-color);
 }
 
 footer {
     margin-top: 30px;
-    background-color: #ddd;
+    background-color: var(--footer-color);
     padding: 20px;
 }
   
@@ -347,7 +362,7 @@ footer > p {
     display: flex;
     justify-content: flex-end;
     font-size: 0.9em;
-    color: #444;
+    color: var(--footer-text-color);
 }
 
 footer > p > a {
