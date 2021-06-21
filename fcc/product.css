@@ -15,6 +15,7 @@
     --nav-link-color: #FFFBFA;
     --button-text-color: #c7eafa;
     --highlight-color: #1FB2C2;
+    --link-visited-color: #0D6993;
     --footer-text-color: #444;
   }
   
@@ -27,6 +28,7 @@
         --label-color: #404040;
         --button-text-color: #c7eafa;
         --highlight-color: #1FB2C2;
+        --link-visited-color: #0D6993;
         --footer-text-color: #888;
     }
   }
@@ -178,6 +180,10 @@ p {
     text-align: center;
     font-family: "Montserrat";
 }
+
+a:link {color: var(--highlight-color); text-decoration: none;}
+a:hover {color: var(--link-visited-color); text-decoration: underline;}
+a:visited {color: var(--link-visited-color); text-decoration: none;}
 
 #about {
     width: 70%;
