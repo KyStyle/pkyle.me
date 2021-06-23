@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- 
+User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
+User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
+User Story #7: The .main-section elements should contain at least 5 li items total (not each).
+User Story #8: I can see a nav element with a corresponding id="navbar".
+User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
+User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+User Story #15: My Technical Documentation page should use at least one media query.
+-->
+<html lang="en">
+    <head>
+        <title>Technical Documentation | PKYLE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Technical Documentation Webpages">
+        <meta name="keywords" content="Kyle Phillips, KyStyle, Documentation, FreeCodeCamp">
+        <meta name="author" content="Kyle Phillips">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Technical Documentation">
+        <meta property="og:description" content="Technical Documentation Page">
+        <meta property="og:url" content="https://pkyle.me/fcc/documentation.html">
+        <meta property="og:image" content="/thumb.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="alternate icon" href="/favicon.ico">
+        <link rel="mask-icon" href="/favicon.svg" color="#222831">
+        <link rel="stylesheet" href="documentation.css">
+    </head>
+<body>
+    <h1>How to set up a Minecraft Server</h1>
+    <main id="main-doc">
+        <section class="main-section" id="getting_started">
+            <header>
+                <h2>Getting Started</h2>
+            </header>
+            <p>The Minecraft Server executable requires the Java Runtime Environment to be installed on your computer. If you do not have Java installed, or think you may have an outdated version, you can download the latest version <a href="https://java.com/en/download/">here</a>.</p>
+            <h3>Setting up the server files</h3>
+            <p>First you will need the server files.</p>
+            <ol>
+                <li><p>Go to the <a href="https://www.minecraft.net/en-us/download/server">Minecraft Server Downloads page</a> and download the <code class="inline-code">minecraft_server.&lt;version&gt;.jar</code> file</p></li>
+                <li><p>Create a new folder with a memorable name (e.g. <i>Minecraft Server 1.17</i>) and move the <code class="inline-code">minecraft_server.&lt;version&gt;.jar</code> file into your new folder.</p></li>
+                <li><p>Open the <code class="inline-code">minecraft_server.&lt;version&gt;.jar</code> file with Java by double clicking on it.</p></li>
+            </ol>
+            <p>You should now see some new files appear in your server directory.</p>
+        </section>
+        <section class="main-section" id="server_configuration">
+            <header>
+                <h2>Server Configuration</h2>
+            </header>
+            <p>To host a Minecraft Server, you must agree to the End User License Agreement (EULA)</p>
+            <ol>
+                <li><p>Inside of your server directory, you should be able to see a <code class="inline-code">eula.txt</code> file. Double click on this file to open it.</p></li>
+                <li><p>Read the contents of the file. Most Importantly, read the <a href="https://account.mojang.com/documents/minecraft_eula">Minecraft EULA</a>.</p></li>
+                <li><p>Only if you agree to the EULA, change <code class="inline-code">eula=false</code> to <code class="inline-code">eula=true</code>.</p>
+                    <p>(If you don't agree to the EULA, stop here and check out <a href="https://www.minetest.net/">Minetest</a> instead!)</p></li>
+                <li><p>Save and close the <code class="inline-code">eula.txt</code> file.</p></li>
+            </ol>
+        </section>
+        <section class="main-section" id="">
+            <header>
+                <h2>Topic</h2>
+            </header>
+            <p>text</p>
+            <p>text</p>
+        </section>
+        <section class="main-section" id="">
+            <header>
+                <h2>Topic</h2>
+            </header>
+            <p>text</p>
+            <p>text</p>
+        </section>
+        <section class="main-section" id="">
+            <header>
+                <h2>Topic</h2>
+            </header>
+            <p>text</p>
+            <p>text</p>
+        </section>
+    </main>
+</body>
+</html>
