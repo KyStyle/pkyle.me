@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'roboto';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/fonts/Roboto-Regular-webfont.eot');
+    src: url('/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('/fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('/fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('/fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+}
+
+:root {
+    --background-color: #000;
+    --text-color: #BBB;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'roboto';
+}
