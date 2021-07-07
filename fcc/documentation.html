@@ -39,7 +39,7 @@ User Story #15: My Technical Documentation page should use at least one media qu
             </header>
             <p>The Minecraft Server executable requires the Java Runtime Environment to be installed on your computer. If you do not have Java installed, or think you may have an outdated version, you can download the latest version <a href="https://java.com/en/download/">here</a>.</p>
             <h3>Setting up the server files</h3>
-            <p>First you will need the server files.</p>
+            <p>Firstly, you will need the server files.</p>
             <ol>
                 <li><p>Go to the <a href="https://www.minecraft.net/en-us/download/server">Minecraft Server Downloads page</a> and download the <code class="inline-code">minecraft_server.&lt;version&gt;.jar</code> file</p></li>
                 <li><p>Create a new folder with a memorable name (e.g. <i>Minecraft Server 1.17</i>) and move the <code class="inline-code">minecraft_server.&lt;version&gt;.jar</code> file into your new folder.</p></li>
@@ -60,12 +60,27 @@ User Story #15: My Technical Documentation page should use at least one media qu
                 <li><p>Save and close the <code class="inline-code">eula.txt</code> file.</p></li>
             </ol>
         </section>
-        <section class="main-section" id="">
+        <section class="main-section" id="router_configuration">
             <header>
-                <h2>Topic</h2>
+                <h2>Port Forwarding</h2>
             </header>
-            <p>text</p>
-            <p>text</p>
+            <p>In order to allow people from outside your local network to connect to your Minecraft Server, you will need to configure a port forwarding rule in your router's administration dashboard. This step can vary a lot depending on which router you are using.</p>
+            <p>A Port Forwarding rule will allow people from outside your private local-area network to connect to a specific service on your computer (in this case, a Minecraft server) over the internet, without exposing the rest of your private network to the outside world.</p>
+            <p>Most household routers will have a web interface that you can connect to via the router's local IP address, which is the default gateway address. To configure a port forwarding rule, first we need to log in to the router web interface.</p>
+            <h3>Finding the Default Gateway address</h3>
+            <h4>Windows Instructions</h4>
+            <ol>
+                <li>Open the command prompt by holding down the <code class="inline-code">Windows</code> key and press <code class="inline-code">R</code> to bring up the Run dialogue</li>
+                <li>Type <code class="inline-code">cmd</code> into the Run dialogue and hit <code class="inline-code">Enter</code></li>
+                <li>In the command prompt, type in <code class="inline-code">ipconfig</code> and hit <code class="inline-code">Enter</code></li>
+                <li>In the console you should be able to see an overview of the Windows IP Configuration. Look for the row with the Default Gateway entry to find your Default Gateway address.</li>
+            </ol>
+            <h4>MacOS Instructions</h4>
+            <ol>
+                <li>Open up the Terminal application from the Launchpad on MacOS, or a terminal emulator which you prefer.</li>
+                <li>In your terminal, type in <code class="inline-code">netstat -nr | grep default</code> and hit <code class="inline-code">Enter</code></li>
+                <li>You should be able to see your default gateway address at the top of the output.</li>
+            </ol>
         </section>
         <section class="main-section" id="">
             <header>
@@ -80,6 +95,22 @@ User Story #15: My Technical Documentation page should use at least one media qu
             </header>
             <p>text</p>
             <p>text</p>
+        </section>
+        <section>
+            <p> - If you are on Windows, go onto cmd and type in ‘ipconfig’, look for your IPv4 address. (It should look something like 192.168.0.16) and find your default gateway address (should look something like 192.168.0.1)</p>
+            <p> - If you are on Mac, go to terminal and type in “ifconfig getifaddr en0” to find your ipv4 address, and then type in “netstat -nr | grep default” to find your default gateway.</p>
+            <p> - Paste the default gateway address into your web browser url bar, and go.</p>
+            <p> - If you need to login, the username is almost always admin or administrator, and the password is almost always just ‘password’, or nothing at all.</p>
+            <p> - Once you are in, look for port forwarding options. This normally comes in under games and services, or firewall settings, if you can’t find it, look for advanced options, and then keep looking.</p>
+            <p> - Once you have found it, create a new port forwarding rule and call it Minecraft. Change the protocol to both UDP and TCP, and set the WAN and LAN port to 25565. Set the destination IP to your IPv4 address which you found earlier in cmd/terminal</p>
+            <p> - Save the port forwarding configuration and then exit the web browser.</p>
+            <p> - Go into the server files and open the server.properties file in a text editor</p>
+            <p> - Edit the line “server-ip” and make sure it equals your IPv4 address.</p>
+            <p> - Launch the server</p>
+            <p> - You can connect to it from the same household via the IPv4 address that you acquired above, but to allow other people to connect to it externally, follow the following steps:</p>
+            <p> - Go to www.google.com and search for “IP”</p>
+            <p> - You should be able to find your public IP address</p>
+            <p> - Send that address to whoever you want to connect to your server, with :25565 at the end of it (It should look something like 60.200.6.202:25565)</p>
         </section>
     </main>
 </body>
